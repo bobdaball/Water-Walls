@@ -1,0 +1,26 @@
+{
+  "name": "water-walls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "waterWallLogic.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobdaball/Water-Walls.git"
+  },
+  "author": "Alexamder Mire",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bobdaball/Water-Walls/issues"
+  },
+  "homepage": "https://github.com/bobdaball/Water-Walls#readme",
+  "devDependencies": {
+    "babel-jest": "^22.1.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^22.1.4",
+    "react-test-renderer": "^16.2.0"
+  }
+}
