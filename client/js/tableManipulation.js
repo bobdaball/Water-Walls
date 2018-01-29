@@ -1,15 +1,16 @@
 const axios = require('axios');
+const mockData = [ [5, 3, 7, 2, 6, 4, 5, 9, 1, 2] , [3, 8, 11] ];
 
 $( document ).ready(function() {
-  $('button').click(function(e) {
-    console.log('request about to send');
-    console.log('e', $(".tower_columns").val());
+  $('#send').click(function(e) {
+    // console.log('request about to send');
+    // console.log($(".tower_columns").html());
+    // console.log('e', $(".tower_columns").val());
     e.preventDefault();
     axios.post('/towerHeights', {
-      tower_heights: $(".tower_columns").val();
+      tower_heights: $(this).val();
     }).then(function (res) {
-      console.log(res);
-      console.log('data received :' + data);
+      tableGenerator(mockData[0], mockData[1]);
     })
     .catch(function (err) {
       console.log(err);
