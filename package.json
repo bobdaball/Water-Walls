@@ -4,7 +4,8 @@
   "description": "",
   "main": "waterWallLogic.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "nodemon server/index.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,9 @@
     "react-test-renderer": "^16.2.0"
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jquery": "^3.3.1"
   }
 }
